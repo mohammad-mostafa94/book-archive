@@ -41,14 +41,3 @@ const searchBookResult = findBooks => {
     });
 }
 // search book result end
-
-
-{
-    /* <div onclick="mealIds(${book.idMeal})" class="card h-100">
-                    <img src="${book.strMealThumb}" class="card-img-top" alt="${book.strMealThumb}">
-                <div class="card-body">
-                        <h5 class="card-title">Book Name: ${book.title}</h5>
-                        <p class="card-text">${book.strInstructions.slice(0,200)}....</p>
-                  </div>
-               </div> */
-}
