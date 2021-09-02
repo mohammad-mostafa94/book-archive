@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Archive</title>
+
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
+
 <body>
-    <h1>Bismillah Hirrah Manirrahim</h1>
+    <!-- search box start -->
+    <h1 class="text-center">Find your book</h1>
+    <div class="input-group w-50 mx-auto">
+        <input id="searchId" type="search" class="form-control rounded" placeholder="Search your book"
+            aria-label="Search" aria-describedby="search-addon" />
+        <button onclick="searchBook()" type="button" class="btn btn-outline-primary">search</button>
+    </div>
+    <!-- search box end -->
+
+    <!-- not found start -->
+    <div id="notfound" class="text-center m-5"></div>
+    <!-- not found end -->
+
+    <!-- length start -->
+    <div id="length" class="text-center m-5"></div>
+    <!-- length end -->
+
+
+
+    <!-- search result here -->
+    <div id="searchResult" class="p-4 m-4 row row-cols-1 row-cols-md-3 g-4">
+    </div>
+
+    <script src="book-archive.js"></script>
 </body>
+
 </html>
